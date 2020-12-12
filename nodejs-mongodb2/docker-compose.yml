@@ -1,0 +1,18 @@
+version: "3.3"
+services:
+  app:
+    build: .
+    image : "demo-service:v1"
+    ports:
+      - "8000:3000"
+    depends_on:
+      - mongo
+    environment:
+      MONGODB_URI: mongodb://127.0.0.1:27017/demo
+      PORT : 3000
+  mongo:
+    image: "mongo:latest"
+    ports: 
+      - "27017:27017"
+    volumes:
+      - './data:/data/db'
