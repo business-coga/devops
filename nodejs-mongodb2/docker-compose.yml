@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  app:
+  nodejs:
     build: .
     image : "demo-service"
     ports:
@@ -10,7 +10,6 @@ services:
     environment:
       MONGODB_URI: mongodb://mongodb:27017/demo
       PORT : 3000
-      WAIT_HOSTS: mongodb:27017
   mongodb:
     image: "mongo:latest"
     hostname: mongodb
