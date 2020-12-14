@@ -1,6 +1,6 @@
 FROM node:12-alpine
 
-MAINTAINER minhpq331@gmail.com
+#MAINTAINER minhpq331@gmail.com
 
 WORKDIR /app
 
@@ -9,4 +9,8 @@ RUN npm install
 
 ADD . /app
 
-CMD ["npm", "start"]
+## THE LIFE SAVER
+ADD https://github.com/ufoscout/docker-compose-wait/releases/download/2.2.1/wait /wait
+RUN chmod +x /wait
+
+CMD /wait && npm run start
