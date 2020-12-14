@@ -1,17 +1,19 @@
-version: "3.3"
+version: "3.9"
 services:
   app:
     build: .
-    image : "demo-service:v1"
+    image : "demo-service"
     ports:
       - "8000:3000"
     depends_on:
-      - mongo
+      - mongodb
     environment:
-      MONGODB_URI: mongodb://127.0.0.1:27017/demo
+      MONGODB_URI: mongodb://mongodb:27017/demo
       PORT : 3000
-  mongo:
+      WAIT_HOSTS: mongodb:27017
+  mongodb:
     image: "mongo:latest"
+    hostname: mongodb
     ports: 
       - "27017:27017"
     volumes:
