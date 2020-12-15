@@ -27,4 +27,4 @@ spec:
             - name: PORT
               value: "3000"
             - name: MONGODB_URI
-              value: "mongodb://mongodb-svc:27017/test-db"
+              value: "mongodb://mongodb-svc:27017/demo"
