@@ -1,2 +1,2 @@
-docker build --no-cache -t demo-service .
+docker build -t demo-service .
 docker-compose up

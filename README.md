@@ -3,9 +3,9 @@
 ## Trắc nhiệm
 
 ### Phần 1 : Git, Docker, Jenkins
-**1A, 2C, 3B, 4D, 5C,  6C, 7D,  8C, 9D, 10C, 11C, 12B, 13A, 14D, 15C, 16A,17D,18B,19C**
+**1A, 2C, 3B, 4D, 5C,  6C, 7D,  8C, 9D, 10C, 11C, 12B, 13A, 14D, 15C, 16A, 17D, 18B, 19C**
 ### Phần 2 : Kubernetes
-**1A, 2B, 3C, 4C,  5C, 6B ,7C, 8C,9C,10,11,12,13,14,15        x**
+**1A, 2B, 3C, 4C, 5C, 6B ,7C, 8C, 9C, 10, 11, 12, 13, 14, 15        x**
 
 ## Yêu cầu triển khai ứng dụng NodeJS + MongoDB
 
